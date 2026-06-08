@@ -76,5 +76,5 @@ flutter:
   assets:
     - assets/lottie/
     - assets/icon/
-    - assets/rive/
     - assets/images/
+    - assets/demo/

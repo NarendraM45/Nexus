@@ -176,6 +176,7 @@ class _TasksScreenState extends ConsumerState<TasksScreen> {
         : ReorderableListView.builder(
             padding: EdgeInsets.only(bottom: 100 + MediaQuery.of(context).padding.bottom, top: 16),
             itemCount: tasks.length,
+            // ignore: deprecated_member_use
             onReorder: (oldIndex, newIndex) {
               ref.read(taskListProvider.notifier).reorderTasks(oldIndex, newIndex);
               HapticFeedback.lightImpact();
