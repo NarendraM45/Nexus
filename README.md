@@ -1,14 +1,16 @@
-<!-- Place assets/banner.svg at the root of your repo in an assets/ folder -->
+<!-- Banner -->
 
 <p align="center">
   <img src="assets/banner.svg" alt="Nexus — Connect. Create. Conquer." width="100%">
 </p>
 
+<!-- Tech stack icons -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Dart-3.2+-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart">
-  &nbsp;
+  <img src="https://skillicons.dev/icons?i=flutter,dart,androidstudio,firebase,git,github&theme=dark" alt="Tech Stack Icons">
+</p>
+
+<!-- Metadata badges -->
+<p align="center">
   <img src="https://img.shields.io/badge/Riverpod-2.5.1-7C3AED?style=flat-square" alt="Riverpod">
   &nbsp;
   <img src="https://img.shields.io/badge/GoRouter-14.2-00BCD4?style=flat-square" alt="GoRouter">
