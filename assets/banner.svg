@@ -1,0 +1,142 @@
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 6px #00E5FF) drop-shadow(0 0 16px #00E5FF40)}50%{filter:drop-shadow(0 0 14px #7C3AED) drop-shadow(0 0 30px #7C3AED70) drop-shadow(0 0 55px #7C3AED25)}}
+@keyframes scan{0%{transform:translateY(-24px);opacity:0}5%{opacity:1}93%{opacity:.28}100%{transform:translateY(200px);opacity:0}}
+@keyframes breathe{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes fa{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes fb{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes fc{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes blink{0%,86%,96%,100%{opacity:.8}89%,93%{opacity:.12}}
+@keyframes dash{to{stroke-dashoffset:-45}}
+@keyframes ringPulse{0%,100%{opacity:.18}50%{opacity:.38}}
+.tt{animation:glow 4s ease-in-out infinite}
+.tag{animation:breathe 5.5s ease-in-out infinite}
+.sc{animation:scan 9s linear infinite}
+.pa{animation:fa 3.2s ease-in-out infinite}
+.pb{animation:fb 4.8s ease-in-out infinite}
+.pc{animation:fc 3.7s ease-in-out infinite}
+.pa2{animation:fa 3.2s ease-in-out 1.5s infinite}
+.pb2{animation:fb 4.8s ease-in-out .8s infinite}
+.pc2{animation:fc 3.7s ease-in-out 2.1s infinite}
+.c1{animation:blink 7s ease-in-out infinite}
+.c2{animation:blink 7s ease-in-out 2.5s infinite}
+.da{stroke-dasharray:28 14;animation:dash 3s linear infinite}
+.ring{animation:ringPulse 6s ease-in-out infinite}
+.ring2{animation:ringPulse 6s ease-in-out 2s infinite}
+</style>
+<linearGradient id="gT" gradientUnits="userSpaceOnUse" x1="276" y1="0" x2="584" y2="0">
+<stop offset="0%" stop-color="#00E5FF"/>
+<stop offset="42%" stop-color="#7C3AED"/>
+<stop offset="100%" stop-color="#F43F8A"/>
+</linearGradient>
+<linearGradient id="gL" gradientUnits="userSpaceOnUse" x1="130" y1="0" x2="730" y2="0">
+<stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+<stop offset="18%" stop-color="#00E5FF" stop-opacity=".9"/>
+<stop offset="65%" stop-color="#7C3AED" stop-opacity=".9"/>
+<stop offset="100%" stop-color="#F43F8A" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="gS" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+<stop offset="50%" stop-color="#00E5FF" stop-opacity=".28"/>
+<stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="860" height="200" fill="#060810"/>
+
+<!-- Background subtle vignette rings -->
+<circle class="ring" cx="430" cy="100" r="240" stroke="#7C3AED" stroke-width="60" fill="none"/>
+<circle class="ring2" cx="430" cy="100" r="160" stroke="#00E5FF" stroke-width="40" fill="none"/>
+
+<!-- Grid horizontals -->
+<line x1="0" y1="40" x2="860" y2="40" stroke="#fff" stroke-opacity=".032" stroke-width=".5"/>
+<line x1="0" y1="80" x2="860" y2="80" stroke="#fff" stroke-opacity=".032" stroke-width=".5"/>
+<line x1="0" y1="120" x2="860" y2="120" stroke="#fff" stroke-opacity=".032" stroke-width=".5"/>
+<line x1="0" y1="160" x2="860" y2="160" stroke="#fff" stroke-opacity=".032" stroke-width=".5"/>
+
+<!-- Grid verticals -->
+<line x1="86"  y1="0" x2="86"  y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="172" y1="0" x2="172" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="258" y1="0" x2="258" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="344" y1="0" x2="344" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="430" y1="0" x2="430" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="516" y1="0" x2="516" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="602" y1="0" x2="602" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="688" y1="0" x2="688" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+<line x1="774" y1="0" x2="774" y2="200" stroke="#fff" stroke-opacity=".022" stroke-width=".5"/>
+
+<!-- Scan line -->
+<rect class="sc" x="0" y="0" width="860" height="24" fill="url(#gS)"/>
+
+<!-- Corner TL -->
+<polyline class="c1" points="14,48 14,14 48,14" stroke="#00E5FF" stroke-width="1.5" fill="none" stroke-opacity=".85"/>
+<!-- Corner TR -->
+<polyline class="c2" points="846,48 846,14 812,14" stroke="#7C3AED" stroke-width="1.5" fill="none" stroke-opacity=".85"/>
+<!-- Corner BL -->
+<polyline class="c2" points="14,152 14,186 48,186" stroke="#F43F8A" stroke-width="1.5" fill="none" stroke-opacity=".85"/>
+<!-- Corner BR -->
+<polyline class="c1" points="846,152 846,186 812,186" stroke="#00E5FF" stroke-width="1.5" fill="none" stroke-opacity=".85"/>
+
+<!-- Dashed accent top -->
+<line class="da" x1="62"  y1="14" x2="210" y2="14" stroke="#00E5FF" stroke-width=".75" stroke-opacity=".45"/>
+<line class="da" x1="650" y1="14" x2="798" y2="14" stroke="#7C3AED" stroke-width=".75" stroke-opacity=".45"/>
+<!-- Dashed accent bottom -->
+<line class="da" x1="62"  y1="186" x2="210" y2="186" stroke="#F43F8A" stroke-width=".75" stroke-opacity=".45"/>
+<line class="da" x1="650" y1="186" x2="798" y2="186" stroke="#00E5FF" stroke-width=".75" stroke-opacity=".45"/>
+
+<!-- Small cross markers -->
+<g stroke="#00E5FF" stroke-width=".8" stroke-opacity=".3">
+<line x1="86" y1="38" x2="86" y2="42"/><line x1="84" y1="40" x2="88" y2="40"/>
+<line x1="172" y1="78" x2="172" y2="82"/><line x1="170" y1="80" x2="174" y2="80"/>
+<line x1="688" y1="38" x2="688" y2="42"/><line x1="686" y1="40" x2="690" y2="40"/>
+<line x1="774" y1="118" x2="774" y2="122"/><line x1="772" y1="120" x2="776" y2="120"/>
+</g>
+
+<!-- Particles left -->
+<circle class="pa"  cx="46"  cy="52"  r="2"   fill="#00E5FF" opacity=".72"/>
+<circle class="pb"  cx="92"  cy="138" r="1.5"  fill="#7C3AED" opacity=".6"/>
+<circle class="pc"  cx="162" cy="44"  r="2.5"  fill="#00E5FF" opacity=".32"/>
+<circle class="pa2" cx="205" cy="168" r="1.5"  fill="#F43F8A" opacity=".5"/>
+<circle class="pb2" cx="54"  cy="178" r="1.2"  fill="#7C3AED" opacity=".8"/>
+<circle class="pc2" cx="128" cy="88"  r="2"    fill="#00E5FF" opacity=".28"/>
+
+<!-- Particles right -->
+<circle class="pb"  cx="814" cy="52"  r="2"   fill="#7C3AED" opacity=".72"/>
+<circle class="pa"  cx="768" cy="142" r="1.5"  fill="#00E5FF" opacity=".6"/>
+<circle class="pc"  cx="698" cy="38"  r="2.5"  fill="#F43F8A" opacity=".32"/>
+<circle class="pa2" cx="655" cy="172" r="1.5"  fill="#00E5FF" opacity=".5"/>
+<circle class="pc2" cx="808" cy="178" r="1.2"  fill="#7C3AED" opacity=".8"/>
+<circle class="pb2" cx="732" cy="96"  r="2"    fill="#F43F8A" opacity=".28"/>
+
+<!-- Particles top/bottom center scatter -->
+<circle class="pc"  cx="348" cy="24"  r="1.5" fill="#00E5FF" opacity=".42"/>
+<circle class="pa2" cx="512" cy="20"  r="1.2" fill="#7C3AED" opacity=".5"/>
+<circle class="pb2" cx="388" cy="178" r="1.5" fill="#F43F8A" opacity=".4"/>
+<circle class="pc2" cx="482" cy="181" r="1"   fill="#00E5FF" opacity=".45"/>
+
+<!-- Bottom separator line -->
+<rect x="130" y="156" width="600" height="1" fill="url(#gL)"/>
+
+<!-- Title: NEXUS -->
+<g class="tt">
+<text x="430" y="107"
+  text-anchor="middle"
+  font-family="'Courier New','Lucida Console',Monaco,Consolas,monospace"
+  font-size="72"
+  font-weight="900"
+  letter-spacing="18"
+  fill="url(#gT)">NEXUS</text>
+</g>
+
+<!-- Tagline -->
+<text class="tag"
+  x="430" y="140"
+  text-anchor="middle"
+  font-family="'Courier New',monospace"
+  font-size="11"
+  letter-spacing="7"
+  fill="#8899BB">CONNECT · CREATE · CONQUER</text>
+
+</svg>
