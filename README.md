@@ -42,21 +42,15 @@ A cinematic Flutter productivity suite — glassmorphic dark UI, a hand-crafted 
 
 ## 🎬 Demo
 
-<!-- Drag and drop a screen recording GIF into this edit view on GitHub, or paste a YouTube embed -->
+<p align="center">
+  <img src="assets/demo/nexus-demo.gif" alt="Nexus App Demo" width="320">
+</p>
 
-| | |
-|:---:|:---:|
-| [▶ Watch demo](#) | [📱 Download APK](https://github.com/NarendraM45/Nexus/releases/download/v1.0.0/nexus-final.apk) |
-
-<details>
-<summary>How to embed a demo GIF</summary>
-
-1. Record your screen (Android screen recorder, or `scrcpy --record demo.mp4`)
-2. Convert to GIF: `ffmpeg -i demo.mp4 -vf "fps=15,scale=320:-1" demo.gif`
-3. Open this `README.md` for editing on GitHub, drag the `.gif` directly into the editor
-4. Replace the table above with the embedded image GitHub generates
-
-</details>
+<p align="center">
+  <a href="https://github.com/NarendraM45/Nexus/releases/download/v1.0.0/nexus-final.apk">
+    <img src="https://img.shields.io/badge/📱%20Download%20APK-v1.0.0-7C3AED?style=for-the-badge&labelColor=060810" alt="Download APK">
+  </a>
+</p>
 
 ---
 
@@ -74,6 +68,31 @@ A cinematic Flutter productivity suite — glassmorphic dark UI, a hand-crafted 
 | 🔍 | **Explore** | Animated expanding search bar — 60% → 100% width on focus |
 | 🎉 | **Confetti** | Burst effect on key milestone completions |
 | 🔔 | **Notifications** | Local push notifications with runtime permission handling via `permission_handler` |
+
+---
+
+## 🗺 App Walkthrough
+
+**Splash & Onboarding**  
+The app opens with a cinematic 8-second animated splash — a pulsing purple hero Lottie plays center-screen over gently floating orbs, a typewriter subtitle fades in, and a mini rocket Lottie sits at the bottom. First-time users are routed to a 3-slide swipeable onboarding carousel with gradient overlays and smooth-page indicator dots. Returning users skip directly to the home screen.
+
+**Authentication**  
+Login and Signup are wrapped in a glassmorphic card that floats over a dolphin Lottie background. Both screens use `flutter_form_builder` with real-time validation, email/password autofill hints, and a shake animation triggered on invalid submit attempts. A success Lottie overlay celebrates a completed login before routing to the loading screen.
+
+**Home Dashboard**  
+A personalized greeting dynamically adapts to time-of-day (Good morning / afternoon / evening). Below sits a feature grid of quick-access tiles, a recent activity feed, and animated metric rings — all with staggered fade-in entry animations via `flutter_animate`.
+
+**Navigation**  
+A hand-crafted 3D Compass widget serves as the persistent bottom navigation bar with arc-geometry icon positioning across routes. Every screen also exposes a Lottie hamburger icon in its AppBar that slides open a full glassmorphic side drawer with the user avatar, profile stats, navigation links, and a one-tap Logout.
+
+**Tasks & Calendar**  
+Tasks are displayed as swipeable cards with priority color-coding, completion rings, and due-date chips. The Calendar tab integrates `table_calendar` with a bottom sheet for quick task creation from any selected date.
+
+**Team**  
+The Team screen shows a live member directory with online presence indicators (animated pulsing green dot), role chips, and `CachedNetworkImage` avatars with shimmer placeholders. Tapping a member opens a detail sheet with skills, task count, and contact info.
+
+**Explore, Notes & Analytics**  
+Explore features an animated search bar that expands from 60% to full width on focus. Notes uses a masonry staggered grid. The Analytics tab drives `fl_chart` bar and line charts with smooth animated data entry.
 
 ---
 
@@ -172,7 +191,7 @@ dart run flutter_launcher_icons
 
 ## 📄 License
 
-MIT © 2026 [Narendra M](https://github.com/NarendraM45)
+MIT © 2026 [NarendraM45](https://github.com/NarendraM45)
 
 ---
 
