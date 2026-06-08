@@ -1,0 +1,80 @@
+name: nexus
+description: "Connect. Create. Conquer."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Core Animations ──
+  lottie: ^3.1.2
+  rive: ^0.13.4
+  animated_text_kit: ^4.2.2
+  shimmer: ^3.0.0
+  flutter_animate: ^4.5.0
+  animations: ^2.0.11
+
+  # ── UI & Effects ──
+  glassmorphism: ^3.0.0
+  blur: ^4.0.0
+  particle_field: any
+  smooth_page_indicator: ^1.2.0
+
+  # ── Navigation ──
+  go_router: ^14.2.0
+  persistent_bottom_nav_bar: ^5.0.2
+
+  # ── Features ──
+  confetti: ^0.7.0
+  image_picker: ^1.1.2
+  table_calendar: ^3.1.2
+  carousel_slider: ^5.0.0
+  permission_handler: ^11.3.1
+  image_cropper: ^8.0.2
+  flutter_staggered_grid_view: ^0.7.0
+  fl_chart: ^0.69.2
+
+  # ── State Management ──
+  flutter_riverpod: ^2.5.1
+
+  # ── Forms & Validation ──
+  flutter_form_builder: ^10.3.0+2
+  form_builder_validators: ^11.3.0
+
+  # ── Storage ──
+  shared_preferences: ^2.3.2
+  flutter_local_notifications: ^17.2.2
+
+  # ── Utilities ──
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  intl: ^0.20.2
+  uuid: ^4.4.2
+  haptic_feedback: ^0.1.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/
+    - assets/icon/
+    - assets/rive/
+    - assets/images/
