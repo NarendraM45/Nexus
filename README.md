@@ -200,3 +200,7 @@ MIT © 2026 [NarendraM45](https://github.com/NarendraM45)
 <p align="center">
   <sub>built with Flutter · powered by an unreasonable number of Lottie files · if this helped, drop a ⭐</sub>
 </p>
+
+<p align="center">
+  <img src="assets/bye.gif" alt="Bye!" width="280">
+</p>
