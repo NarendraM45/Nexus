@@ -202,5 +202,5 @@ MIT © 2026 [NarendraM45](https://github.com/NarendraM45)
 </p>
 
 <p align="center">
-  <img src="assets/bye.gif" alt="Bye!" width="280">
+  <img src="https://raw.githubusercontent.com/NarendraM45/Nexus/main/assets/bye.gif" alt="Bye!" width="280">
 </p>
